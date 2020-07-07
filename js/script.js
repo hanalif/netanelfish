@@ -33,5 +33,9 @@ function closeMenu() {
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+});
+
 
 

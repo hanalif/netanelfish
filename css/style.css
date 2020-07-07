@@ -311,32 +311,29 @@ input[name="r"]{
 
 /* ============= video-section =============== */ 
 
-.section{
+.section {
+    min-height: 100vw;
     width: inherit;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 
-.title-section{
+.title-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title-section img{
+.title-section img {
     width:20%;
     margin: 0 20px 0 20px;
 }
 
-
-
-.videoSc h1{
+.title-section h1 {
     font-size: 50px;
     margin: 0;
-
 }
 
 .videoSc{
@@ -346,6 +343,20 @@ input[name="r"]{
     background-position: center;
 }
 
+.video-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+}
+
+.videoclip {
+    margin: 20px;
+
+}
+
+.videoclip iframe {
+
+}
 
 
 
