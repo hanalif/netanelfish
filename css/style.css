@@ -3,6 +3,10 @@
     src: url("../fonts/amatic/AmaticSC-Regular.ttf"), url("../fonts/amatic/AmaticSC-Regular.woff");
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     direction: rtl;
     font-family:  amatic-regular;
@@ -84,7 +88,7 @@ header {
 
 
 .hamburger-manu {
-    position: absolute;
+    position: fixed;
     display: none;
     justify-content: center;
     align-items: center;
@@ -143,7 +147,7 @@ header {
 .hamburger-nav {
     display: flex;
     height: 0px;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -152,6 +156,7 @@ header {
     background-size: cover;
     z-index: 100;
     overflow: hidden;
+    transition: all ease .5s;
 }
 
 .hamburger-nav ul {
@@ -185,7 +190,6 @@ header {
         height: 300px;
         padding-top: 60px;
         padding-bottom: 20px;
-        transition: all ease .5s;
     }
 
     .hamburger-nav nav {
@@ -247,16 +251,17 @@ header {
 }
 
 .bar{
-    width: 50px;
+    width: 10px;
     height: 10px;
-    border: 2px solid #fff;
+    border-radius: 50%;
+    border: 2px solid #000000;
     margin: 6px;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .bar:hover{
-    background: #fff;
+    background: #000000;
 
 }
 
@@ -303,4 +308,44 @@ input[name="r"]{
 #r5:checked ~ .s1{
     margin-right: -80%;
 }
+
+/* ============= video-section =============== */ 
+
+.section{
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section img{
+    width:20%;
+    margin: 0 20px 0 20px;
+}
+
+
+
+.videoSc h1{
+    font-size: 50px;
+    margin: 0;
+
+}
+
+.videoSc{
+    background-image: url(../images/bg/bg-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 
