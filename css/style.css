@@ -388,13 +388,38 @@ input[name="r"]{
 .videoclip{
     width: 100%;
 }
+
 .video-container {
     width: 74%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(49%, 3fr));
     grid-template-rows: repeat(2, auto);
     grid-gap: 20px;
+    margin-bottom: 50px;
 }
+
+/* ============= stills-section =============== */ 
+
+.stills-images-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+} 
+
+.picture-grid{
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+}
+
+.picture-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 /* ============= about-me-section =============== */ 
 
