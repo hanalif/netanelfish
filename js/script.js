@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 stillImageGrid.addEventListener('click', function(e) {
     if (e.target.classList.contains('still-image-container')) {
         let image = e.target.querySelector('img');
-        let src = image.getAttribute("src");
+        let src = image.getAttribute('src');
         stillsModal.style.display = 'flex';
         stillModalImage.setAttribute('src', src);
     }
